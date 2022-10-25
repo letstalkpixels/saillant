@@ -8,7 +8,7 @@ $(".splide").each((index) => {
     focus: 0, // 0 = left and 'center' = center
     slideFocus: true,
     type: "slide", // 'loop' or 'slide'
-    gap: "1rem", // space between slides
+    gap: "0.5rem", // space between slides
     arrows: false, // 'slider' or false
     speed: 600, // transition speed in miliseconds
     dragAngleThreshold: 30, // default is 30
