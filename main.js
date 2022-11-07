@@ -9,7 +9,6 @@ $(".splide").each((index) => {
     slideFocus: true,
     type: "slide", // 'loop' or 'slide'
     gap: "0.5rem", // space between slides
-    arrows: false, // 'slider' or false
     speed: 600, // transition speed in miliseconds
     dragAngleThreshold: 30, // default is 30
     autoWidth: false, // for cards with differing widths
@@ -35,12 +34,6 @@ $(".splide").each((index) => {
         gap: "1rem",
       },
     },
-  });
-  const bar = splide.root.querySelector(".my-carousel-progress-bar");
-
-  splide.on("mounted move", function () {
-    var end = splide.Components.Controller.getEnd() + 1;
-    bar.style.width = String((100 * (splide.index + 1)) / end) + "%";
   });
 
   splide.mount();
