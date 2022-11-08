@@ -1,3 +1,13 @@
+$(".splide__arrow").replaceWith(function () {
+    let attrs = { };
+
+    $.each($(this), function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+    });
+  
+    return $("<button />", attrs).append($(this).contents());
+});
+
 $(".splide").each((index) => {
   const splideElement = $(".splide")[index];
 
