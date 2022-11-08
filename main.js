@@ -1,7 +1,7 @@
 $(".splide__arrow").replaceWith(function () {
     let attrs = { };
 
-    $.each($(this).attributes, function(idx, attr) {
+    $.each($(this)[0].attributes, function(idx, attr) {
         attrs[attr.nodeName] = attr.nodeValue;
     });
   
