@@ -17,7 +17,7 @@ $(".splide").each((index) => {
     perMove: 1,
     focus: 0, // 0 = left and 'center' = center
     slideFocus: true,
-    type: "loop", // 'loop' or 'slide'
+    type: "slide", // 'loop' or 'slide'
     gap: "0.5rem", // space between slides
     speed: 600, // transition speed in miliseconds
     dragAngleThreshold: 30, // default is 30
