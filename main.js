@@ -111,4 +111,12 @@ $(".faq-item").click(function () {
   }
 
   convertDates();
+    
+  setTimeout(() => {
+    let cookieConsentElements = [...document.getElementsByClassName('fs-cc-banner_component')];
+    for (let index in cookieConsentElements) {
+      let element = cookieConsentElements[index];
+      element.classList.add('fs-cc-banner_component--visible');
+    }
+  }, 4000);
 })();
