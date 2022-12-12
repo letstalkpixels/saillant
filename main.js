@@ -112,6 +112,7 @@ $(".faq-item").click(function () {
 
   convertDates();
     
+  // Cookie consent delay
   setTimeout(() => {
     let cookieConsentElements = [...document.getElementsByClassName('fs-cc-banner_component')];
     for (let index in cookieConsentElements) {
